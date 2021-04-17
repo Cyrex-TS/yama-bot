@@ -1380,7 +1380,6 @@ async function starts() {
 					const hob =['Una buena paja mi loco para ir a dormir']
 					const by = hob[Math.floor(Math.random() * hob.length)]
 					client.sendMessage(from, 'Pregunta : *'+hobby+'*\n\nRespuesta : '+ by, text, { quoted: mek })
-					}
 					break
                                 case 'nsfwneko':
 				    try{
