@@ -1440,7 +1440,6 @@ async function starts() {
 					gatauda = body.slice(8)					
 					anu = await fetchJson(`https://arugaz.my.id/api/randomquotes`, {method: 'get'})
 					reply(anu.quotes)
-					}
 					break		
 			    case 'waifu':
 					gatauda = body.slice(7)
@@ -1560,7 +1559,6 @@ async function starts() {
                                         if (anu.error) return reply(anu.error)
                                         hasil = `*Profundidad* : ${anu.kedalaman}\n*Coordenada* : ${anu.koordinat}\n*Locacion* : ${anu.lokasi}\n*Magnitud* : ${anu.magnitude}\n*Map* : ${anu.map}\n*Potensi* : ${anu.potensi}\n*Waktu* : ${anu.waktu}`
                                         client.sendMessage(from, hasil, text, {quoted:mek})
-                                        }
 					break
                                 case 'nsfwtrap':
                                         try{
