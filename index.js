@@ -1575,7 +1575,7 @@ async function starts() {
 					case 'hentai': 
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
-							res = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai?apikey=APIKEYLU`, {method: 'get'})
+							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/hentai`, {method: 'get'})
 							buffer = await getBuffer(res.result)
 							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Otaku que se esperaba'})
 						} catch (e) {
@@ -1583,10 +1583,10 @@ async function starts() {
 							reply('❌ *ERROR* ❌')
 						}
 						break
-					case 'loli':
+					case 'araara':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
-							res = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=APIKEYLU`, {method: 'get'})
+							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/Hentai4Everyone`, {method: 'get'})
 							buffer = await getBuffer(res.url)
 							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Alto pedofilo socio'})
 						} catch (e) {
@@ -1616,12 +1616,12 @@ async function starts() {
 							reply('❌ *ERROR* ❌')
 						}
 						break
-					case 'nsfwneko':
+					case 'nudecitos':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
-							res = await fetchJson(`https://api.computerfreaker.cf/v1/neko`, {method: 'get'})
+							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/RealGirls`, {method: 'get'})
 							buffer = await getBuffer(res.result)
-							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Pero que wea?'})
+							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Rica minita'})
 						} catch (e) {
 							console.log(`Error :`, color(e,'red'))
 							reply('❌ *ERROR* ❌')
@@ -1630,7 +1630,7 @@ async function starts() {
 					case 'trapito':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
-							res = await fetchJson(`https://api.computerfreaker.cf/v1/trap`, {method: 'get'})
+							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/traphentai`, {method: 'get'})
 							buffer = await getBuffer(res.result)
 							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Na flaco estas re enfermo'})
 						} catch (e) {
@@ -1641,7 +1641,7 @@ async function starts() {
 				     	case 'culos':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
-							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/greatass`, {method: 'get'})
+							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/ass`, {method: 'get'})
 							buffer = await getBuffer(res.url)
 							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Ese es el culo que querías?'})
 						} catch (e) {
